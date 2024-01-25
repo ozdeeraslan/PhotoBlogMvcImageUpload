@@ -5,6 +5,7 @@ namespace PhotoBlogUygulama.Attributes
     public class GecerliResimAttribute : ValidationAttribute
     {
         public double MaxDosyaBoyutuMb { get; set; } = 1;
+        public double MaxDosyaBoyutuMB { get; set; }
 
         protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
         {
